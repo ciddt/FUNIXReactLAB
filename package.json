@@ -1,11 +1,21 @@
 {
   "name": "lab01_05",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is the Git and Node basic learning project",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciddt/FunixReactLab.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://github.com/ciddt",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
 }
