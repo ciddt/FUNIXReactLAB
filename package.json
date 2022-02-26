@@ -16,6 +16,6 @@
   "license": "ISC",
   "homepage": "https://github.com/ciddt",
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "lite-server": "^2.6.1"
   }
 }
