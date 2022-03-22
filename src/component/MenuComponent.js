@@ -1,0 +1,36 @@
+import React, { Component } from "react";
+import { Card, CardImgOverlay, CardImg, CardTitle } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+class Menu extends Component {
+    render() {
+        const menu = this.props.dishes.map(dish => (
+            <div 
+                key={dish.id}
+                className="col-12 col-md-5 m-1"
+            >
+                <Card 
+                    onClick={() => this.props.onClick(dish.id)}
+                >
+                    <CardImg
+                        src={dish.image}
+                        alt={dish.name}
+                        width="100%"
+                    />
+                    <CardImgOverlay>
+                        <CardTitle>{dish.name}</CardTitle>
+                    </CardImgOverlay>
+                </Card>
+            </div>
+        ))
+        return (
+            <div className="container">
+                <div className="row">
+                    {menu}
+                </div>
+            </div>
+        )
+    }
+}
+
+export default Menu;
